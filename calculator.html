@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>calculatore</title>
+		<script>
+			function addTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1+num2;
+			}
+			function average()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=(num1+num2)/2;
+			}
+			function minus()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=(num1-num2);
+			}
+			function division()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=(num1/num2);
+			}
+		</script>
+		</head>
+		<body>
+
+			<h1>fan with calculatore</h1><br>
+			<from>
+	<label for="fnumber">Firstnumber:</label>
+	<input type="text" id="fnumber" name="fnumber"><br><br>
+	<label for="snumber">Second Number:</label>
+	<input type="text" id="snumber" name="snumber"><br><br>
+	</form>
+	
+		<button onclick="addTwoNumbers()">
+		addieren
+		</button>
+		<button onclick="average()">
+		sum
+		</button>
+		<button onclick="minus()">
+		minus
+		</button>
+		<button onclick="division()">
+		division
+		</button>
+		<p id="result">
+		</p>
+		</a>
+	</body>
+</html>
+ 
